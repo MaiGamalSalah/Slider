@@ -48,8 +48,8 @@ function close_slide() {
 }
 
 popup_container.addEventListener("click", function(event) {
-    if (event.target == next || event.target == prev || event.target == close) {
-        return;
+    if (event.target === next || event.target === prev || event.target === close || event.target === popup_img) {
+        return; 
     }
     close_slide();
 });
